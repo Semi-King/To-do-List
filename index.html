@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Do Something</title>
+</head>
+
+<body>
+
+    <header>
+        <h1>Come on, do something...</h1>
+        <form id="new-task-form">
+            <input type="text" placeholder="What do you have planned?" id="new-task-input">
+            <input type="submit" id="new-task-submit" value="Add Task">
+        </form>
+    </header>
+
+    <main>
+        <section class="task-list">
+            <h2>Tasks</h2>
+
+            <div id="tasks">
+
+                <div class="task">
+                    <div class="content">
+                        <input type="text" class="text" value="You can't touch this bro" readonly>
+                    </div>
+                    <div class="actions">
+                        <button class="edit">Edit</button>
+                        <button class="delete">Delete</button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
